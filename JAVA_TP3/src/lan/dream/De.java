@@ -1,5 +1,7 @@
 package lan.dream;
 
+import java.util.Random;
+
 public class De
 {
 	private int value = 0;
@@ -10,5 +12,10 @@ public class De
 
 	public void setValue(int value) {
 		this.value = value;
+	}
+
+	public void Roles()
+	{
+		value =  new Random().nextInt(6) + 1;
 	}
 }

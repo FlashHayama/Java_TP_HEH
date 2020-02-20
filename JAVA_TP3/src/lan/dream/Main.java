@@ -7,15 +7,10 @@ public class Main
 {
     public static void main(String[] args) throws IOException
     {
-        char c;
-        do 
-        {
-            c = (char) System.in.read();
-            if (c == '\n')
-            {
-                System.out.println("enter");
-            }
-        }while (c != 'q');
+        Game game = new Game();
+
+        game.Start();
+
         System.out.println("Jeu quitter");
     }
 }

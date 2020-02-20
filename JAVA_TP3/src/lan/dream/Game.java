@@ -1,13 +1,11 @@
 package lan.dream;
 
+import java.io.IOException;
 import java.util.*;
 
 public class Game
 {
-	public int Roles()
-	{
-		return (new Random().nextInt(6) + 1);
-	}
+
 
 	public void Combination(int de1 , int de2)
 	{
@@ -53,9 +51,39 @@ public class Game
 			return -1;
 		}
 	}
-	public void Start()
+	public void Start() throws IOException
 	{
+		De de1 = new De();
+		De de2 = new De();
+		char c;
+		int i;
+		do
+		{
+			System.out.println("[Appuier sur enter pour lancer les dés ou q pour quitter]");
+			c = (char) System.in.read();
+			if (c == '\n')
+			{
+				de1.Roles();de2.Roles();
+				System.out.println(de1.getValue() + "\t+\t" + de2.getValue() + "\t=\t" + (de1.getValue() + de2.getValue()));
+				Combination(de1.getValue(),de2.getValue());
+				i = Verify(de1.getValue(),de2.getValue());
+				switch(i)
+				{
+					case 0:
+						System.out.println("Gagner");
+						break;
+					case 1:
+						System.out.println("Perdu");
+						break;
+					case 2:
+						/*do
+						{
 
+						}while ();*/
+						break;
+				}
+			}
+		}while (c != 'q');
 	}
 
 }
