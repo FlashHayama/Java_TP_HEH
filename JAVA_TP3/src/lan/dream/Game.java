@@ -32,7 +32,6 @@ public class Game
 		{
 			System.out.println("Boxcars");
 		}
-
 	}
 	public int Verify(int de1, int de2)
 	{
@@ -45,7 +44,7 @@ public class Game
 		{
 			return 1;
 		}
-		if(sum == 4 || sum == 5 || sum == 6 || sum == 8 || sum == 9 || sum == 10)
+		else if(sum == 4 || sum == 5 || sum == 6 || sum == 8 || sum == 9 || sum == 10)
 		{
 			return 2;
 		}
