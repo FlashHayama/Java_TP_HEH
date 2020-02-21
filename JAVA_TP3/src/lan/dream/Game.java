@@ -82,8 +82,18 @@ public class Game
 						}while ();*/
 						break;
 				}
+
 			}
-		}while (c != 'q');
+			else if(c == 'q')
+			{
+				break;
+			}
+			else
+			{
+				System.out.println("Mauvaise saisie");
+				System.in.skip(100);
+			}
+		}while (true);
 	}
 
 }
