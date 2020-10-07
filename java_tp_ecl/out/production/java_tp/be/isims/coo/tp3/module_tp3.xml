@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_tp3" default="compile.module.tp3">
+  <dirname property="module.tp3.basedir" file="${ant.file.module_tp3}"/>
+  
+  <property name="module.jdk.home.tp3" value=""/>
+  <property name="module.jdk.bin.tp3" value=""/>
+  <property name="module.jdk.classpath.tp3" value=""/>
+  
+  <property name="compiler.args.tp3" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="tp3.output.dir" value="undefined"/>
+  <property name="tp3.testoutput.dir" value="undefined"/>
+  
+  <path id="tp3.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="tp3.module.production.classpath"/>
+  
+  <path id="tp3.runtime.production.module.classpath"/>
+  
+  <path id="tp3.module.classpath"/>
+  
+  <path id="tp3.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.tp3">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.tp3">
+    <patternset refid="excluded.from.module.tp3"/>
+  </patternset>
+  
+  
+  <target name="compile.module.tp3" depends="compile.module.tp3.production,compile.module.tp3.tests" description="Compile module tp3"/>
+  
+  <target name="compile.module.tp3.production" depends="register.custom.compilers" description="Compile module tp3; production classes"/>
+  
+  <target name="compile.module.tp3.tests" depends="register.custom.compilers,compile.module.tp3.production" description="compile module tp3; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.tp3" description="cleanup module">
+    <delete dir="${tp3.output.dir}"/>
+    <delete dir="${tp3.testoutput.dir}"/>
+  </target>
+</project>

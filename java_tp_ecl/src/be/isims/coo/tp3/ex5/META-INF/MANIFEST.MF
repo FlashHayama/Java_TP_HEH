@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp3.ex5.EmployeTest
+Class-Path: ./out/production/

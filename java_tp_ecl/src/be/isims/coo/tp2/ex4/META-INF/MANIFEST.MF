@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp2.ex4.FactureTest
+Class-Path: ./out/production/

@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="ihm_tp4_ex3:jar">
+    <output-path>$PROJECT_DIR$/jar/ihm</output-path>
+    <root id="root">
+      <element id="archive" name="ihm_tp4_ex3.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/be/isims/ihm/tp4/ex3/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="java_tp" />
+      </element>
+    </root>
+  </artifact>
+</component>

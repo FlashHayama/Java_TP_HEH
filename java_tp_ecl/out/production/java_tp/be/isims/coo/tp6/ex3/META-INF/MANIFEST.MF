@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp6.ex3.Application
+Class-Path: ./out/production/

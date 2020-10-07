@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="jar/coo/tp2_ex1.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp2_ex2.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp2_ex3.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp2_ex4.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp3_ex1.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp3_ex2.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp3_ex3.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp3_ex4.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp3_ex5.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp4_ex1.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp4_ex2.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp4_ex3.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp5_ex1.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp5_ex3.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp5_ex4.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp6_ex2.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp6_ex3.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp7_ex1.jar"/>
+	<classpathentry kind="lib" path="jar/coo/tp7_ex2.jar"/>
+	<classpathentry kind="lib" path="jar/ihm/tp2_ex1.jar"/>
+	<classpathentry kind="output" path="out/production/java_tp"/>
+</classpath>

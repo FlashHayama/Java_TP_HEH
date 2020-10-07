@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp3.ex1.CrapsTest
+Class-Path: ./out/production/

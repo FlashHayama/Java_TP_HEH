@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp6.ex2.MinuteurTest
+Class-Path: ./out/production/

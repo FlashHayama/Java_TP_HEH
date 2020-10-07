@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="java_tp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tp4_ex2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp7_ex2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp4_ex3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp5_ex4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp7_ex1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp6_ex2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp4_ex1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp5_ex1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp6_ex3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/tp5_ex3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

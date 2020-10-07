@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_tp6" default="compile.module.tp6">
+  <dirname property="module.tp6.basedir" file="${ant.file.module_tp6}"/>
+  
+  <property name="module.jdk.home.tp6" value=""/>
+  <property name="module.jdk.bin.tp6" value=""/>
+  <property name="module.jdk.classpath.tp6" value=""/>
+  
+  <property name="compiler.args.tp6" value="-encoding UTF-8 -source 11 -target 11 ${compiler.args}"/>
+  
+  <property name="tp6.output.dir" value="undefined"/>
+  <property name="tp6.testoutput.dir" value="undefined"/>
+  
+  <path id="tp6.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="tp6.module.production.classpath"/>
+  
+  <path id="tp6.runtime.production.module.classpath"/>
+  
+  <path id="tp6.module.classpath"/>
+  
+  <path id="tp6.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.tp6">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.tp6">
+    <patternset refid="excluded.from.module.tp6"/>
+  </patternset>
+  
+  
+  <target name="compile.module.tp6" depends="compile.module.tp6.production,compile.module.tp6.tests" description="Compile module tp6"/>
+  
+  <target name="compile.module.tp6.production" depends="register.custom.compilers" description="Compile module tp6; production classes"/>
+  
+  <target name="compile.module.tp6.tests" depends="register.custom.compilers,compile.module.tp6.production" description="compile module tp6; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.tp6" description="cleanup module">
+    <delete dir="${tp6.output.dir}"/>
+    <delete dir="${tp6.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,2 @@
+Main-Class: be.isims.coo.tp2.ex3.CardioFreqTest
+Class-Path: ./out/production/
